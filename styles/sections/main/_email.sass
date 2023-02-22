@@ -1,0 +1,91 @@
+.email-field
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  bottom: 0
+  background: #162C4E
+  height: 192px
+  width: 100%
+
+.email-input
+  width: 440px
+  height: 59px
+  background: #FFFFFF
+  border: 1px solid rgba(0, 0, 0, 0.8)
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4)
+  border-radius: 40px
+  margin: 0 0 10px 150px
+  &::placeholder
+    +roboto
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 150%
+    color: rgba(0, 0, 0, 0.6)
+    position: relative
+    left: 25px
+
+.email-button
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  right: 39%
+  bottom: 80px
+  cursor: pointer
+  background-color: #DF2224
+  width: 43px
+  height: 43px
+  border-radius: 100px
+
+.other-events-btn
+  display: flex
+  align-items: center
+  position: relative
+  left: 250px
+  +poppins
+  text-decoration: none
+  font-style: normal
+  font-weight: 400
+  font-size: 20px
+  line-height: 150%
+  color: #FFFFFF
+  flex: none
+  order: 0
+  flex-grow: 0
+
+@media ( min-width: 768px  ) and (  max-width: 1919px  )
+  .email-field
+    height: 162px
+
+  .email-input
+    width: 360px
+    height: 41px
+    &::placeholder
+      font-size: 14px
+      left: 20px
+
+  .email-button
+    width: 33px
+    height: 33px
+    right: 27%
+    bottom: 70px
+
+@media ( min-width: 360px  ) and (  max-width: 767px  )
+  .email-field
+    height: 141px
+
+  .email-input
+    width: 280px
+    height: 41px
+    margin: 0 0 0px 150px
+    &::placeholder
+      font-size: 14px
+      left: 20px
+
+  .email-button
+    width: 33px
+    height: 33px
+    right: 32%
+    bottom: 55px

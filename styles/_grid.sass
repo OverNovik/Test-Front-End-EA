@@ -1,0 +1,29 @@
+*
+  margin: 0
+  padding: 0
+  border: 0
+  box-sizing: border-box
+  scroll-behavior: smooth
+
+html, body
+  height: 100%
+
+@mixin roboto
+  font-family: 'Roboto', sans-serif
+
+@mixin poppins
+  font-family: 'Poppins', sans-serif
+
+body
+  +roboto
+  // opacity: 0
+  // transition: 2s
+  // animation: show 3s 1
+  // animation-fill-mode: forwards
+  // animation-delay: 0.5s
+
+@keyframes show
+  0%
+    opacity: 0
+  100%
+    opacity: 1

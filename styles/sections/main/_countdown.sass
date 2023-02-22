@@ -1,0 +1,61 @@
+.countdown
+  display: flex
+  justify-content: space-between
+  margin-top: 32px
+  // width: 588px
+  height: 129px
+  &-number
+    display: flex
+    flex-direction: column
+  &-time
+    +poppins
+    font-style: normal
+    font-weight: 600
+    font-size: 72px
+    line-height: 100%
+    color: #162C4E
+  &-text
+    display: flex
+    align-items: center
+    justify-content: center
+    background-image: url('../assets/bg.png')
+    background-repeat: no-repeat
+    width: 135px
+    height: 132px
+    +poppins
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 100%
+    color: #FFFFFF
+
+.dot
+  margin-right: 50px
+
+@media ( max-width: 768px  )
+  .countdown
+    width: 358px
+    height: 82px
+    &-time
+      font-size: 36px
+    &-text
+      background-image: url('../assets/768/Vector3.png')
+      width: 64px
+      height: 40px
+
+  .dot
+    margin-right: 10px
+
+@media ( min-width: 360px  ) and (  max-width: 767px  )
+  .countdown
+    width: 310px
+    height: 82px
+    &-time
+      font-size: 36px
+    &-text
+      background-image: url('../assets/360/Vector3.png')
+      width: 64px
+      height: 40px
+
+.dot
+  margin-right: 0px

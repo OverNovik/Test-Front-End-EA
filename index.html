@@ -4,10 +4,106 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <title>LEAD advisors</title>
 </head>
 <body>
-  <h1>new project</h1>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img class="logo-img" src="assets/logo.png" alt="logo" /></a>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="container-description">
+        <h1 class="container-description-title">Under Construction</h1>
+        <p class="container-description-text">We're making lots of improvements and will be back soon</p>
+      </div>
+      <div id="countdown" class="countdown">
+        <div class="countdown-number">
+          <span class="days countdown-time"></span>
+          <span class="countdown-text">Days</span>
+        </div>
+        <span class="dot countdown-time">:</span>
+        <div class="countdown-number">
+          <span class="hours countdown-time"></span>
+          <span class="countdown-text">Hours</span>
+        </div>
+        <span class="dot countdown-time">:</span>
+        <div class="countdown-number">
+          <span class="minutes countdown-time"></span>
+          <span class="countdown-text">Minutes</span>
+        </div>
+        <span class="dot countdown-time">:</span>
+        <div class="countdown-number">
+          <span class="seconds countdown-time"></span>
+          <div class="countdown-text">Seconds</div>
+        </div>
+      </div>
+      <div class="event">
+        <p class="event-text">Check our event page when you wait:</p>
+        <a href="https://egorovagency.by/#main" class="event-button">Go to the event<img src="assets/arrow.png" alt="arrow" /></a>
+      </div>
+    </div>
+    <div class="email-field">
+      <form id="email-field-form">
+        <input type="email" name="email" class="email-input" placeholder="Enter your Email and get notified" required>
+        <button class="email-button open-modal" type="submit">
+          <img class="email-button-arrow" src="assets/arrow.png" alt="submit" />
+        </button>
+      </form>
+      <a class="other-events-btn" href="#footer">Other Events <img src="assets/arrow-down.png" alt="submit" /></a>
+    </div>
+  </main>
+  <div id="menu" class="menu">
+    <h2 class="all-events-title">All events</h2>
+    <div class="panel-container">
+      <div class="panel" style="background-image: url('assets/photo.png')">
+          <div>Hawaiian party</div>
+          <a href="https://egorovagency.by/#main">More information</a>
+      </div>
+      <div class="panel active" style="background-image: url('assets/photo.png')">
+          <div>Мafia party</div>
+          <a href="https://egorovagency.by/#main">More information</a>
+      </div>
+      <div class="panel" style="background-image: url('assets/photo.png')">
+          <div>Party</div>
+          <a href="https://egorovagency.by/#main">More information</a>
+      </div>
+      <div class="panel" style="background-image: url('assets/photo.png')">
+          <div>Party on the beach</div>
+          <a href="https://egorovagency.by/#main">More information</a>
+      </div>
+      <div class="panel" style="background-image: url('assets/photo.png')">
+          <div>Home Security</div>
+          <a href="https://egorovagency.by/#main">More information</a>
+      </div>
+      <div class="panel" style="background-image: url('assets/photo.png')">
+        <div>Network Design & Implementation</div>
+        <a href="https://egorovagency.by/#main">More information</a>
+      </div>
+      <div class="panel" style="background-image: url('assets/photo.png')">
+        <div>System Design & Engineering</div>
+        <a href="https://egorovagency.by/#main">More information</a>
+      </div>
+      <div class="panel" style="background-image: url('assets/photo.png')">
+        <div>Client Care Plans</div>
+        <a href="https://egorovagency.by/#main">More information</a>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="modal">
+      <button class="modal__close"><img class="modal__close__img  close" src="assets/cancel.png" /></button>
+      <h3 class="modal__title">SUCCESS!</h3>
+      <p class="modal__text">You have successfully subscribed to the email newsletter</p>
+      <button class="modal__button close">Close</button>
+    </div>
+    <div class="overlay close" id="overlay-modal"></div>
+  </div>
+  <script src="./js/countdown.js"></script>
+  <script src="./js/panel.js"></script>
+  <script src="./js/form.js"></script>
 </body>
 </html>

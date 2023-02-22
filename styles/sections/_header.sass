@@ -1,0 +1,59 @@
+.header
+  display: flex
+  justify-content: center
+  align-items: center
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 470px
+    height: 419px
+    background-image: url('../assets/backgroundImage.png')
+    background-repeat: no-repeat
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    right: 0
+    width: 271px
+    height: 327px
+    background-image: url('../assets/backgroundImage2.png')
+    background-repeat: no-repeat
+
+.logo
+  margin-top: 58px
+
+.header-image-first, .header-image-second
+  position: absolute
+  top: 0
+
+.header-image-second
+  right: 0
+
+@media ( max-width: 767px  )
+  .header
+    &::before
+      background-image: url('../assets/768/Vector1.png')
+    &::after
+      background-image: url('../assets/768/Vector2.png')
+      width: 264px
+
+  .logo
+    margin: 100px 0 0 20px
+
+@media ( min-width: 360px  ) and (  max-width: 767px  )
+  .header
+    &::before
+      background-image: url('../assets/360/Vector.png')
+    &::after
+      background-image: url('../assets/360/Vector2.png')
+      width: 184px
+
+  .logo
+    background-image: url('../assets/360/logo.png')
+    width: 128px
+    height: 40px
+    margin: 80px 0 0 0
+    &-img
+      display: none

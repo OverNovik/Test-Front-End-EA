@@ -1,0 +1,59 @@
+.container
+  &-description
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    white-space: nowrap
+    margin-top: 43.72px
+    &-title
+      +poppins
+      font-style: normal
+      font-weight: 700
+      font-size: 72px
+      line-height: 104%
+      text-align: center
+      text-transform: uppercase
+      color: #162C4E
+      opacity: 0.39
+      margin-bottom: 8px
+    &-text
+      +poppins
+      font-style: normal
+      font-weight: 400
+      font-size: 18px
+      line-height: 150%
+      text-align: center
+      color: rgba(0, 0, 0, 0.8)
+      width: 423px
+      height: 54px
+
+@media ( max-width: 768px  )
+  .container
+    &-description
+      &-title
+        font-size: 36px
+        margin: 70px 0 0 9px
+      &-text
+        font-size: 16px
+
+@media ( min-width: 360px  ) and (  max-width: 767px  )
+  .container
+    &-description
+      position: relative
+      bottom: 27px
+      right: 5px
+      &-title
+        display: flex
+        justify-content: center
+        white-space: normal
+        width: 120px
+        height: 74px
+        margin-top: 0
+      &-text
+        margin-top: 15px
+        white-space: normal
+        word-wrap: break-word
+        font-size: 16px
+        width: 286px
+        height: 48px

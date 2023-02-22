@@ -1,0 +1,77 @@
+.overlay
+  opacity: 0
+  visibility: hidden
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, .5)
+  z-index: 20
+  transition: .3s all
+
+.modal
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  opacity: 0
+  visibility: hidden
+  width: 18%
+  height: 40%
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 30
+  box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2)
+  padding: 30px
+  border-radius: 3px
+  background-color: #fff
+  transition: 0.3s all
+  &__title
+    +poppins
+    font-style: normal
+    font-weight: 700
+    font-size: 36px
+    line-height: 104%
+    text-align: center
+    text-transform: uppercase
+    color: #162C4E
+  &__text
+    +poppins
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 150%
+    text-align: center
+    color: rgba(0, 0, 0, 0.8)
+  &__button
+    background: #1D4169
+    border-radius: 40px
+    +poppins
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 150%
+    color: #FFFFFF
+    width: 60%
+    height: 20%
+    cursor: pointer
+  &__close
+    background: #fff
+    align-self: flex-end
+    cursor: pointer
+
+.modal.active,
+.overlay.active
+  opacity: 1
+  visibility: visible
+
+@media ( min-width: 768px  ) and (  max-width: 1919px  )
+  .modal
+    width: 38%
+
+@media ( min-width: 360px  ) and (  max-width: 767px  )
+  .modal
+    width: 80%
